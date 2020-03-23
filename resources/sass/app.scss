@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
-.header__navbar__home {
-  margin-right: auto;
+.header__navbar {
+  display: flex;
+  &__home {
+    margin-right: auto;
+  }
 }

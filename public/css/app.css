@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.header__navbar {
+  display: flex;
+}
+
 .header__navbar__home {
   margin-right: auto;
 }
