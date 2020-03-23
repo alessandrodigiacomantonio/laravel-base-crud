@@ -1,6 +1,7 @@
 @extends('layout')
 @section('main')
   <section class="main__section">
+    <img class="main__section__img" src="https://www.fondazioneveronesi.it/uploads/thumbs/2020/01/16/xlatte-latticini-dieta_thumb_720_480.jpg.pagespeed.ic.geJLYkc3-Q.jpg" alt="Immagine Latticini">
     <h2 class="main__title">I Latticini</h2>
     <p class="main__txt">
       Il termine latticini (singolare latticìnio, dal latino lacticinium) ha due significati, uno più generico e uno più restrittivo. In senso generico sono latticini tutti gli alimenti derivanti dal latte, ottenuti secondo i procedimenti più vari; tra essi si comprendono quindi la ricotta, i formaggi freschi e stagionati, il burro, la panna e lo yogurt.

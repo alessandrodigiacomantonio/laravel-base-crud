@@ -3,28 +3,34 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Latticino;
 
 class LatticiniController extends Controller
 {
   public function ricottaIndex()
   {
-    return view('latticini.ricotta');
+    $prodotto = $this->getProdotto('ricotta');
+    return view('latticini.ricotta', compact('prodotto'));
   }
   public function formaggioIndex()
   {
-    return view('latticini.formaggio');
+    $prodotto = $this->getProdotto('formaggio');
+    return view('latticini.formaggio', compact('prodotto'));
   }
   public function pannaIndex()
   {
-    return view('latticini.panna');
+    $prodotto = $this->getProdotto('panna');
+    return view('latticini.panna', compact('prodotto'));
   }
   public function yogurtIndex()
   {
-    return view('latticini.yogurt');
+    $prodotto = $this->getProdotto('yogurt');
+    return view('latticini.yogurt', compact('prodotto'));
   }
   public function burroIndex()
   {
-    return view('latticini.burro');
+    $prodotto = $this->getProdotto('burro');
+    return view('latticini.burro', compact('prodotto'));
   }
   public function nuovoProdotto(Request $request)
   {
@@ -36,11 +42,19 @@ class LatticiniController extends Controller
     $nuovoProdottoSalvato = $latticino->save();
     if($nuovoProdottoSalvato)
     {
-      return redirect()->route('latticino.'.$nuovoProdotto['prodotto']);
+      return redirect()->route('latticini.'.$nuovoProdotto['prodotto']);
     }
     else
     {
-      return redirect()->route('latticino.nuovo_prodotto');
+      return redirect()->route('latticini.nuovo_prodotto');
+    }
+  }
+  public function getProdotto($string)
+  {
+    $prodotti = Latticino::all();
+    foreach($prodotti as $prodotto)
+    {
+      if($prodotto['prodotto'] == $string) return $prodotto;
     }
   }
 }
