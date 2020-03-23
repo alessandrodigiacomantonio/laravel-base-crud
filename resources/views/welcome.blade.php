@@ -80,9 +80,9 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <a href="{{ route('latticini.home') }}"><div class="title m-b-md">
+                      Latticini
+                  </div></a>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
