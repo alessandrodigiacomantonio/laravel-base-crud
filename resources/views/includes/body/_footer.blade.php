@@ -1,3 +1,3 @@
 <footer class="footer">
-  @yield('footer')
+  Wikipedia → ctrl-c → Repository → ctrl-v
 </footer>
