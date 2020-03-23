@@ -39,6 +39,8 @@ body {
   max-width: 1200px;
   width: 70%;
   margin: 40px  auto;
+  display: flex;
+  flex-direction: column;
   flex-grow:1;
   text-align:justify;
   &__section {
@@ -69,8 +71,37 @@ body {
     font-size: 24px;
   }
   &__form {
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     flex-direction: column;
+    & *:not(:first-child) {
+      margin-top: 40px;
+    }
+    & * {
+      border-radius: 10px;
+      border: 1px solid tan;
+      padding: 20px;
+      &:focus {
+        outline: none;
+      }
+    }
+    & input {
+      height: 50px;
+      &[type="submit"] {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        background-color: tan;
+        color: linen;
+      }
+    }
+    & textarea {
+      &::placeholder {
+        font-family: Arial;
+      }
+    }
   }
   &__content__img {
     float: left;
