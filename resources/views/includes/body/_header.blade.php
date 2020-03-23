@@ -8,5 +8,6 @@
     <a class="header__navbar__link" href="{{ rounte('latticini.burro') }}">Burro</a>
     <a class="header__navbar__link" href="{{ rounte('latticini.yogurt') }}">Yogurt</a>
     <a class="header__navbar__link" href="{{ rounte('latticini.panna') }}">Panna</a>
+    <a class="header__navbar__link" href="{{ rounte('latticini.nuovo_prodotto') }}">Nuovo Prodotto</a>
   </nav>
 </header>

@@ -26,4 +26,25 @@ class LatticiniController extends Controller
   {
     return view('latticini.burro')
   }
+  public function nuovoIndex()
+  {
+    return view('latticini.nuovo_prodotto')
+  }
+  public function nuovoProdotto(Request $request)
+  {
+    $nuovoProdotto = $request->all();
+    $latticino = new Latticino;
+    $latticino->prodotto = $nuovoProdotto['prodotto'];
+    $latticino->url_img = $nuovoProdotto['url_img'];
+    $latticino->descrizione = $nuovoProdotto['descrizione'];
+    $nuovoProdottoSalvato = $latticino->save();
+    if($nuovoProdottoSalvato)
+    {
+      return redirect()->route('latticino.'.$nuovoProdotto['prodotto']);
+    }
+    else
+    {
+      return redirect()->route('latticino.nuovo_prodotto');
+    }
+  }
 }
