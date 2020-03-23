@@ -17,5 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/latticini', function () {
-    return view('home');
+    return view('latticini.home');
 })->name('latticini.home');
+Route::get('/latticini/burro', 'LatticiniController@burroIndex')->name('latticini.burro');
+Route::get('/latticini/formaggio', 'LatticiniController@formaggioIndex')->name('latticini.formaggio');
+Route::get('/latticini/yogurt', 'LatticiniController@yogurtIndex')->name('latticini.yogurt');
+Route::get('/latticini/panna', 'LatticiniController@pannaIndex')->name('latticini.panna');
+Route::get('/latticini/ricotta', 'LatticiniController@ricottaIndex')->name('latticini.ricotta');
