@@ -40,7 +40,10 @@ class LatticiniController extends Controller
     $calogero = Latticino::all();
     foreach($calogero as $propappio)
     {
-      if ($propappio->prodotto == $prodotto) $propappio->delete();
+      if ($propappio->prodotto != 'burro' && $propappio->prodotto != 'formaggio' && $propappio->prodotto != 'panna' && $propappio->prodotto != 'yogurt' && $propappio->prodotto != 'ricotta')
+      {
+          if ($propappio->prodotto == $prodotto) $propappio->delete();
+      }
     }
     return redirect()->route('latticini.tutti_i_prodotti');
   }
