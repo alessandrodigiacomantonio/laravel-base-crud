@@ -23,7 +23,7 @@ class LatticiniController extends Controller
     $nuovoProdottoSalvato = $latticino->save();
     if($nuovoProdottoSalvato)
     {
-      return redirect()->route('latticini.'.$nuovoProdotto['prodotto']);
+      return redirect()->route('latticini.prodotto', $nuovoProdotto['prodotto']);
     }
     else
     {
