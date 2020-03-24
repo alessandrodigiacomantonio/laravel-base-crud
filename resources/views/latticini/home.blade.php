@@ -22,7 +22,7 @@
       La <a href="{{ route('latticini.prodotto', 'ricotta') }}">ricotta</a> si ottiene come residuo della produzione del formaggio dalla cagliata ovvero come parte del siero del latte.
     </p>
     <p class="main__txt">
-      Il <a href="{{ route('latticini.prodotto', 'ricotta') }}">burro</a> è prodotto dalla lavorazione della panna (o crema di latte), con formazione di un'emulsione.
+      Il <a href="{{ route('latticini.prodotto', 'burro') }}">burro</a> è prodotto dalla lavorazione della panna (o crema di latte), con formazione di un'emulsione.
     </p>
     <p class="main__txt">
       Lo <a href="{{ route('latticini.prodotto', 'yogurt') }}">yogurt</a> viene realizzato per fermentazione batterica degli zuccheri presenti nel latte.
