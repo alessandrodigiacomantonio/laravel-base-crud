@@ -28,6 +28,7 @@ body {
 
 .header__navbar__link {
   color: linen;
+  text-transform: capitalize;
 }
 
 .header__navbar__link + .header__navbar__link {

@@ -21,6 +21,7 @@ body {
     display: flex;
     &__link {
       color: linen;
+      text-transform: capitalize;
       & + & {
         margin-left: 20px;
       }
