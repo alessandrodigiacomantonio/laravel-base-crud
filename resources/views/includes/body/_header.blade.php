@@ -14,5 +14,6 @@
       <a class="header__navbar__link" href="{{ route('latticini.prodotto', $prodotto) }}">{{$latticino['prodotto']}}</a>
     @endforeach
     <a class="header__navbar__link" href="{{ route('latticini.nuovo_prodotto') }}">Nuovo Prodotto</a>
+    <a class="header__navbar__link" href="{{ route('latticini.tutti_prodotti') }}">Tutti i Prodotti</a>
   </nav>
 </header>

@@ -26,3 +26,4 @@ Route::get('/latticini/nuovo_prodotto', function () {
 Route::post('/latticini/nuovo_prodotto', 'LatticiniController@nuovoProdotto')->name('latticini.post.nuovo_prodotto');
 
 Route::get('/latticini/{prodotto}', 'LatticiniController@prodottoIndex')->name('latticini.prodotto');
+Route::get('/latticini/tutti_i_prodotti', 'LatticiniController@prodottoIndex')->name('latticini.tutti_prodotti');
