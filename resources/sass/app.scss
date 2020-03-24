@@ -14,6 +14,7 @@ body {
 .header {
   padding: 20px 0;
   background-color: tan;
+
   &__navbar {
     max-width: 1200px;
     width: 70%;
@@ -32,6 +33,8 @@ body {
     &__home {
       margin-right: auto;
       color: linen;
+      font-size: 1.5rem;
+      font-variant: small-caps;
     }
   }
 }

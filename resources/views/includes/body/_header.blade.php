@@ -8,7 +8,10 @@
       Latticini
     </a>
     @foreach ($latticini as $latticino)
-      <a class="header__navbar__link" href="{{ route('latticini.'.$latticino['prodotto']) }}">{{$latticino['prodotto']}}</a>
+      @php
+        $prodotto = $latticino['prodotto'];
+      @endphp
+      <a class="header__navbar__link" href="{{ route('latticini.prodotto', $prodotto) }}">{{$latticino['prodotto']}}</a>
     @endforeach
     <a class="header__navbar__link" href="{{ route('latticini.nuovo_prodotto') }}">Nuovo Prodotto</a>
   </nav>

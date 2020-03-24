@@ -22,9 +22,10 @@ Route::get('/latticini', function () {
 Route::get('/latticini/nuovo_prodotto', function () {
   return view('latticini.nuovo_prodotto');
 })->name('latticini.nuovo_prodotto');
-Route::get('/latticini/burro', 'LatticiniController@burroIndex')->name('latticini.burro');
-Route::get('/latticini/formaggio', 'LatticiniController@formaggioIndex')->name('latticini.formaggio');
-Route::get('/latticini/yogurt', 'LatticiniController@yogurtIndex')->name('latticini.yogurt');
-Route::get('/latticini/panna', 'LatticiniController@pannaIndex')->name('latticini.panna');
-Route::get('/latticini/ricotta', 'LatticiniController@ricottaIndex')->name('latticini.ricotta');
+// Route::get('/latticini/burro', 'LatticiniController@burroIndex')->name('latticini.burro');
+// Route::get('/latticini/formaggio', 'LatticiniController@formaggioIndex')->name('latticini.formaggio');
+// Route::get('/latticini/yogurt', 'LatticiniController@yogurtIndex')->name('latticini.yogurt');
+// Route::get('/latticini/panna', 'LatticiniController@pannaIndex')->name('latticini.panna');
+// Route::get('/latticini/ricotta', 'LatticiniController@ricottaIndex')->name('latticini.ricotta');
 Route::post('/latticini/nuovo_prodotto', 'LatticiniController@nuovoProdotto')->name('latticini.post.nuovo_prodotto');
+Route::get('/latticini/{prodotto}', 'LatticiniController@prodottoIndex')->name('latticini.prodotto');

@@ -16,19 +16,19 @@
       Tra i prodotti caseari più diffusi vi sono formaggio, ricotta, burro, yogurt, panna e crema.
     </p>
     <p class="main__txt">
-      Il <a href="{{ route('latticini.formaggio') }}">formaggio</a> è ottenuto tramite coagulazione della parte proteica del latte (caseina) e della parte grassa per mezzo del caglio; si distinguono tra essi i formaggi freschi e i formaggi stagionati. Il formaggio, ai fini della legge italiana, non è un latticino.
+      Il <a href="{{ route('latticini.prodotto', 'formaggio') }}">formaggio</a> è ottenuto tramite coagulazione della parte proteica del latte (caseina) e della parte grassa per mezzo del caglio; si distinguono tra essi i formaggi freschi e i formaggi stagionati. Il formaggio, ai fini della legge italiana, non è un latticino.
     </p>
     <p class="main__txt">
-      La <a href="{{ route('latticini.ricotta') }}">ricotta</a> si ottiene come residuo della produzione del formaggio dalla cagliata ovvero come parte del siero del latte.
+      La <a href="{{ route('latticini.prodotto', 'ricotta') }}">ricotta</a> si ottiene come residuo della produzione del formaggio dalla cagliata ovvero come parte del siero del latte.
     </p>
     <p class="main__txt">
-      Il <a href="{{ route('latticini.burro') }}">burro</a> è prodotto dalla lavorazione della panna (o crema di latte), con formazione di un'emulsione.
+      Il <a href="{{ route('latticini.prodotto', 'ricotta') }}">burro</a> è prodotto dalla lavorazione della panna (o crema di latte), con formazione di un'emulsione.
     </p>
     <p class="main__txt">
-      Lo <a href="{{ route('latticini.yogurt') }}">yogurt</a> viene realizzato per fermentazione batterica degli zuccheri presenti nel latte.
+      Lo <a href="{{ route('latticini.prodotto', 'yogurt') }}">yogurt</a> viene realizzato per fermentazione batterica degli zuccheri presenti nel latte.
     </p>
     <p class="main__txt">
-      La <a href="{{ route('latticini.panna') }}">panna</a> è costituita dalla parte grassa del latte, ottenuta per centrifugazione o per affioramento in seguito a decantazione lenta.
+      La <a href="{{ route('latticini.prodotto', 'panna') }}">panna</a> è costituita dalla parte grassa del latte, ottenuta per centrifugazione o per affioramento in seguito a decantazione lenta.
     </p>
     <p class="main__txt">
       Si considera latticinio anche il <a href="">kéfir</a>.
