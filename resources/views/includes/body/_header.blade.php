@@ -13,7 +13,7 @@
       @endphp
       <a class="header__navbar__link" href="{{ route('latticini.prodotto', $prodotto) }}">{{$latticino['prodotto']}}</a>
     @endforeach
-    <a class="header__navbar__link" href="{{ route('latticini.nuovo_prodotto') }}">Nuovo Prodotto</a>
-    <a class="header__navbar__link" href="{{ route('latticini.tutti_prodotti') }}">Tutti i Prodotti</a>
+    <a class="header__navbar__link" href="{{ route('latticini.nuovo_prodotto') }}">nuovo prodotto</a>
+    <a class="header__navbar__link" href="{{ route('latticini.tutti_i_prodotti') }}">tutti i prodotti</a>
   </nav>
 </header>

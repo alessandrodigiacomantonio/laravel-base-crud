@@ -47,6 +47,52 @@ body {
   flex-direction: column;
   flex-grow:1;
   text-align:justify;
+  &__list {
+    list-style: none;
+    &__product {
+      transition: 0.1s;
+      &:hover {
+        box-shadow: 3px 3px 10px tan;
+      }
+      & + & {
+        margin-top: 40px;
+      }
+      &__content {
+        display: flex;
+        align-items: center;
+        & *:not(:first-child) {
+          margin-left: 40px;
+        }
+        &__img {
+          width: 150px;
+        }
+        &__name {
+          min-width: 100px;
+        }
+        &__delete {
+          & [type="submit"] {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid tan;
+            background-color: tan;
+            color: linen;
+            cursor: pointer;
+            transition: 0.15s;
+            &:hover {
+              padding: 12.5px 25px;
+              filter: drop-shadow(2px 4px 7px tan);
+            }
+            &:active {
+              padding: 10px 20px;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
   &__section {
     & + & {
       margin-top: 60px;

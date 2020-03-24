@@ -30,6 +30,20 @@ class LatticiniController extends Controller
       return redirect()->route('latticini.nuovo_prodotto');
     }
   }
+  public function tuttiProdottiIndex()
+  {
+    $prodotti = Latticino::all();
+    return view('latticini.tutti_i_prodotti', compact('prodotti'));
+  }
+  public function cancellaProdotto(Request $request, $prodotto)
+  {
+    $calogero = Latticino::all();
+    foreach($calogero as $propappio)
+    {
+      if ($propappio->prodotto == $prodotto) $propappio->delete();
+    }
+    return redirect()->route('latticini.tutti_i_prodotti');
+  }
   public function getProdotto($string)
   {
     $prodotti = Latticino::all();
