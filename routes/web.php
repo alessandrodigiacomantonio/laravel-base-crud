@@ -27,5 +27,5 @@ Route::post('/latticini/nuovo_prodotto', 'LatticiniController@nuovoProdotto')->n
 
 Route::get('/latticini/{prodotto}', 'LatticiniController@prodottoIndex')->name('latticini.prodotto');
 
-Route::get('/latticini/prodotti/tutti_i_prodotti', 'LatticiniController@tuttiProdottiIndex')->name('latticini.tutti_i_prodotti');
+Route::get('/latticini/tutti_i_prodotti', 'LatticiniController@tuttiProdottiIndex')->name('latticini.tutti_i_prodotti');
 Route::delete('/latticini/prodotti/tutti_i_prodotti/{prodotto}', 'LatticiniController@cancellaProdotto')->name('latticini.cancella_prodotto');

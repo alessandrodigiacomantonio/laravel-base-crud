@@ -9,7 +9,6 @@
           <form class="main__list__product__content__delete" action="{{ route('latticini.cancella_prodotto', $prodotto['prodotto']) }}" method="post">
             @csrf
             @method('DELETE')
-            {{-- <input type="hidden" name="prodotto" value="{{ $prodotto['prodotto'] }}"> --}}
             <input type="submit" value="Cancella">
           </form>
         </a>
